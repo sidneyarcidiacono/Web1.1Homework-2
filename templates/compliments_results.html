@@ -2,9 +2,13 @@
 <html>
     <head>
         <title>Compliments Results</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css" />
     </head>
     <body>
-        <!-- Your HTML code goes here! -->
+      <div>
+          <a href="home">Home</a> </br>
+      </div>
+      <div>
         {% if wants_compliments == 'yes'%}
           <p>Hello, {{users_name}}! I'm so glad to see you.</p>
               <ul>You are:
@@ -15,5 +19,6 @@
         {% else %}
           <p>Thanks for stopping by {{users_name}}! Have a good day!</p>
         {% endif %}
+    </div>
     </body>
 </html>

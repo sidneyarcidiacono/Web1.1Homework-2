@@ -2,9 +2,14 @@
 <html>
     <head>
         <title>Froyo Results</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css" />
     </head>
     <body>
-        <!-- Your HTML code goes here! -->
-         <p>You ordered {{users_froyo_flavor}} flavored Fro-Yo with toppings {{ ', '.join(users_toppings) }}
+      <div>
+        <a href="/home">Home</a> </br>
+      </div>
+      <div>
+         <p>You ordered {{users_froyo_flavor}} flavored Fro-Yo with toppings {{ ', '.join(users_toppings) }}.</p>
+     </div>
     </body>
 </html>
