@@ -5,10 +5,15 @@
     </head>
     <body>
         <!-- Your HTML code goes here! -->
-
-        
-
-        
-        
+        {% if wants_compliments == 'yes'%}
+          <p>Hello, {{users_name}}! I'm so glad to see you.</p>
+              <ul>You are:
+                {% for compliment in return_compliments %}
+                  <li>{{compliment}}</li>
+                {% endfor %}
+              </ul>
+        {% else %}
+          <p>Thanks for stopping by {{users_name}}! Have a good day!</p>
+        {% endif %}
     </body>
 </html>
